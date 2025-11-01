@@ -1,0 +1,81 @@
+/*
+=============== 
+  المتغيرات (Variables) - غيري الألوان هني براحتج
+===============
+*/
+:root {
+  /* اللون الأساسي (مال الأزرار والعناوين) */
+  --primary-color: #0d6efd; /* هذا أزرق بوتستراب الحالي */
+  
+  /* اللون الثانوي (لو تبين) */
+  --secondary-color: #6c757d; 
+
+  /* لون الخلفية (مال الصفحة) */
+  --background-color: #f8f9fa; /* رمادي فاتح */
+
+  /* لون الكارد (البطاقة البيضا) */
+  --card-background: #ffffff;
+
+  /* لون الخط الأساسي (غامج) */
+  --text-color: #212529;
+
+  /* لون الخط على الأزرار (فاتح) */
+  --light-text-color: #ffffff;
+  
+  /* لون الـ Dashboard (غامج) */
+  --dark-theme-color: #212529; /* أسود/رمادي غامج */
+}
+
+
+/*
+=============== 
+  الستايل العام (لا تغيرين وايد هني)
+===============
+*/
+body {
+  font-family: 'Tahoma', sans-serif; /* غيري الخط لو تبين */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*
+=============== 
+  ستايل الفورم (form.html)
+===============
+*/
+.card {
+  background-color: var(--card-background);
+  border: none; /* شلنا الحدود الملونة */
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.btn-primary:hover {
+  /* نغمج اللون الأساسي شوي لما الماوس يروح عليه */
+  filter: brightness(90%);
+  border-color: var(--primary-color);
+}
+
+/*
+=============== 
+  ستايل الداشبورد (admin.html)
+===============
+*/
+.navbar-dark {
+  background-color: var(--dark-theme-color) !important;
+}
+
+.table-dark {
+  /* لون الهيدر مال الجدول */
+  background-color: var(--primary-color) !important;
+  color: var(--light-text-color);
+}
